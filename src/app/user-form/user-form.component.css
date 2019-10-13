@@ -10,3 +10,8 @@
   margin-left: 1em;
   color: darkgray
 }
+
+.btn-default {
+  background-color: red;
+  color: white
+}
