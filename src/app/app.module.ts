@@ -7,6 +7,11 @@ import { TetiereComponent } from './tetiere/tetiere.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { PhoneNumberPipe } from "./user-form/phoneNumber.pipe";
 import { FooterComponent } from './footer/footer.component';
+import { ArticleService } from './service/article.service';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ListFilterComponent } from './list-filter/list-filter.component';
+import { ListFilterPipe } from './list-filter/list-filter.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,14 +19,19 @@ import { FooterComponent } from './footer/footer.component';
     TetiereComponent,
     UserFormComponent,
     PhoneNumberPipe,
-    FooterComponent
+    FooterComponent,
+    ArticleListComponent,
+    ListFilterComponent,
+    ListFilterPipe
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    PhoneNumberPipe
+    PhoneNumberPipe,
+    ArticleService
   ],
   bootstrap: [AppComponent]
 })
