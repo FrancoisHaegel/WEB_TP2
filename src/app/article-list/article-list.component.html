@@ -1,5 +1,5 @@
 <app-list-filter (changeType)="majType($event)" (changeFilter)="majFilter($event)"></app-list-filter>
-
+<h3>Article list</h3>
 <div class="row">
     <div class="col-md-3" *ngFor="let article of articles | listFilter :inputFilter:type">
         <div class="ibox">
