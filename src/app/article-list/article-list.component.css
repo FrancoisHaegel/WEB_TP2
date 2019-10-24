@@ -1,0 +1,20 @@
+.product-picture {
+  max-width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 3em 0;
+}
+
+.product-desc {
+  background-color: #c8c8c8c8;
+  padding: 1em;
+  border-radius: 0.35em;
+}
+.product-name {
+  font-weight: bold;
+}
+
+.product-sub-desc {
+  padding-top:5%;
+  margin-left: 0.5em;
+}
