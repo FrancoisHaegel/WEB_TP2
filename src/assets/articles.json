@@ -1,0 +1,74 @@
+[
+    {
+       "name" : "Rolls Royce Sweptails",
+       "color": "dark-blue",
+       "engine": "6.75L V12",
+       "hp": 453,
+       "max_speed": 150,
+       "price" : 13000000,
+       "picture" : "./img/rolls_royce.jpg"
+    },
+    {
+        "name" : "Koenigsegg Ccxr Trevita",
+        "color": "light-blue",
+        "engine": "4.7L V8",
+        "hp": 1004,
+        "max_speed": 254,
+        "price" : 4800000,
+        "picture" : "./img/koenisegg_ccxr_trevita.jpg"
+    },
+    {
+        "name" : "Lamborghini Veneno",
+        "color": "green",
+        "engine": "6.5L V12",
+        "hp": 740,
+        "max_speed": 221,
+        "price" : 4500000,
+        "picture" : "./img/lamborghini_veneno.jpg"
+    },
+    {
+        "name" : "McLaren P1 LM",
+        "color": "black",
+        "engine": "3.8L V8",
+        "hp": 1000,
+        "max_speed": 147,
+        "price" : 3600000,
+        "picture" : "./img/mclaren_p1_lm.jpg"
+    },
+    {
+        "name" : "Lykan HyperSport",
+        "color": "red",
+        "engine": "3.7L V12",
+        "hp": 780,
+        "max_speed": 240,
+        "price" : 3400000,
+        "picture" : "./img/lykan_hypersport.jpg"
+    },
+    {
+        "name" : "Bugatti Veyron",
+        "color": "grey",
+        "engine": "8.0L V12",
+        "hp": 1200,
+        "max_speed": 253,
+        "price" : 3400000,
+        "picture" : "./img/bugatti_veyron.jpg"
+    },
+    {
+        "name" : "Aston Martin",
+        "color": "light-blue",
+        "engine": "6.5L V12",
+        "hp": 1000,
+        "max_speed": 250,
+        "price" : 3200000,
+        "picture" : "./img/aston_martin.jpg"
+    },
+    {
+        "name" : "Ferrari Pininfarina",
+        "color": "dark-red",
+        "engine": "4.5L V8",
+        "hp": 570,
+        "max_speed": 198,
+        "price" : 3000000,
+        "picture" : "./img/ferrari_pininfarina.jpg"
+    }
+]
