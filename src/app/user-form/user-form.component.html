@@ -8,7 +8,8 @@
                required
                [(ngModel)]="model.firstName" name="firstName"
                #firstName="ngModel"
-               pattern="^[A-Za-z]{1,20}$">
+               pattern="^[A-Za-z]{1,20}$" 
+               fieldError>
         <div [hidden]="firstName.valid"
              class="alert alert-danger">
           First Name is required and must be less than 20 LETTERS
@@ -20,7 +21,8 @@
                required
                [(ngModel)]="model.lastName" name="lastName"
                #lastName="ngModel"
-               pattern="^[A-Za-z]{1,20}$">
+               pattern="^[A-Za-z]{1,20}$"
+               fieldError>
         <div [hidden]="lastName.valid"
              class="alert alert-danger">
           Last Name is required and must be less than 20 LETTERS
@@ -32,7 +34,8 @@
                required
                [(ngModel)]="model.login" name="login"
                #login="ngModel"
-               pattern="^[0-9A-Za-z]{1,20}$">
+               pattern="^[0-9A-Za-z]{1,20}$"
+               fieldError>
         <div [hidden]="login.valid"
              class="alert alert-danger">
           Login is required and must be less than 20 LETTERS or NUMBERS
@@ -45,7 +48,8 @@
                required
                [(ngModel)]="model.password" name="password"
                #password="ngModel"
-               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[ !@#$€%^&*()_+\-=\[\]{};':\\|,.<>\/?])[0-9a-zA-Z!@#$€%^&*()_+\-=\[\]{};':\\|,.<>\/?]{8,}$">
+               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[ !@#$€%^&*()_+\-=\[\]{};':\\|,.<>\/?])[0-9a-zA-Z!@#$€%^&*()_+\-=\[\]{};':\\|,.<>\/?]{8,}$"
+               fieldError>
         <div [hidden]="password.valid"
              class="alert alert-danger">
           Password is required and must contains at least 1 upper case, 1 lower case, 1 digit, 1 special character, and be at least 8 characters
@@ -58,7 +62,8 @@
                required
                [(ngModel)]="model.city" name="city"
                #city="ngModel"
-               pattern="^[A-Za-z]{1,50}$">
+               pattern="^[A-Za-z]{1,50}$"
+               fieldError>
         <div [hidden]="city.valid"
              class="alert alert-danger">
           City is required and must be less than 50 characters
@@ -71,7 +76,8 @@
                required
                [(ngModel)]="model.postalCode" name="postalCode"
                #postalCode="ngModel"
-               pattern="^[0-9]{5}$">
+               pattern="^[0-9]{5}$"
+               fieldError>
         <div [hidden]="postalCode.valid"
              class="alert alert-danger">
           Postal Code is required
@@ -84,7 +90,8 @@
                required
                [(ngModel)]="model.address" name="address"
                #address="ngModel"
-               pattern="^[a-zA-Z0-9\-.,' ]+$">
+               pattern="^[a-zA-Z0-9\-.,' ]+$"
+               fieldError>
         <div [hidden]="address.valid"
              class="alert alert-danger">
           Address is required
@@ -97,7 +104,8 @@
                required
                [(ngModel)]="model.email" name="email"
                #email="ngModel"
-               pattern="^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$">
+               pattern="^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$"
+               fieldError>
         <div [hidden]="email.valid"
              class="alert alert-danger">
           E-Mail is required and must be formated like <strong>example@hostname.countryCode</strong>
@@ -110,7 +118,8 @@
                required
                [(ngModel)]="model.phoneNumber" name="phoneNumber"
                #phoneNumber="ngModel"
-               pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
+               pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$"
+               fieldError>
         <div [hidden]="phoneNumber.valid"
              class="alert alert-danger">
           Phone Number is required and must be 10 NUMBERS
@@ -122,7 +131,8 @@
         <select class="form-control" id="gender"
                 required
                 [(ngModel)]="model.gender" name="gender"
-                #gender="ngModel">
+                #gender="ngModel"
+                fieldError>
           <option *ngFor="let gen of genders" [value]="gen">{{gen}}</option>
         </select>
         <div [hidden]="gender.valid" class="alert alert-danger">
@@ -135,7 +145,8 @@
         <select class="form-control" id="country"
                 required
                 [(ngModel)]="model.country" name="country"
-                #country="ngModel">
+                #country="ngModel"
+                fieldError>
           <option *ngFor="let cou of countries" [value]="cou">{{cou}}</option>
         </select>
         <div [hidden]="country.valid" class="alert alert-danger">
