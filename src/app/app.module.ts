@@ -12,6 +12,7 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { ListFilterComponent } from './list-filter/list-filter.component';
 import { ListFilterPipe } from './list-filter/list-filter.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { InputErrorDirective } from './user-form/input-error.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ArticleListComponent,
     ListFilterComponent,
-    ListFilterPipe
+    ListFilterPipe,
+    InputErrorDirective
   ],
   imports: [
     BrowserModule,
