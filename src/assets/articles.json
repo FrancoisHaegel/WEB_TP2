@@ -6,7 +6,7 @@
        "hp": 453,
        "max_speed": 150,
        "price" : 13000000,
-       "picture" : "./img/rolls_royce.jpg"
+       "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/01_rolls_royce_sweptails.jpg"
     },
     {
         "name" : "Koenigsegg Ccxr Trevita",
@@ -15,7 +15,7 @@
         "hp": 1004,
         "max_speed": 254,
         "price" : 4800000,
-        "picture" : "./img/koenisegg_ccxr_trevita.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/02_koenigsegg_ccxr_trevita.jpg"
     },
     {
         "name" : "Lamborghini Veneno",
@@ -24,7 +24,7 @@
         "hp": 740,
         "max_speed": 221,
         "price" : 4500000,
-        "picture" : "./img/lamborghini_veneno.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/03_lamborghini_veneno.jpg"
     },
     {
         "name" : "McLaren P1 LM",
@@ -33,7 +33,7 @@
         "hp": 1000,
         "max_speed": 147,
         "price" : 3600000,
-        "picture" : "./img/mclaren_p1_lm.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/09_mclaren_p1_lm.jpg"
     },
     {
         "name" : "Lykan HyperSport",
@@ -42,7 +42,7 @@
         "hp": 780,
         "max_speed": 240,
         "price" : 3400000,
-        "picture" : "./img/lykan_hypersport.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/04_lykan_hypersport.jpg"
     },
     {
         "name" : "Bugatti Veyron",
@@ -51,7 +51,7 @@
         "hp": 1200,
         "max_speed": 253,
         "price" : 3400000,
-        "picture" : "./img/bugatti_veyron.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/07_bugatti_veyron_mansory_vivere.jpg"
     },
     {
         "name" : "Aston Martin",
@@ -60,7 +60,7 @@
         "hp": 1000,
         "max_speed": 250,
         "price" : 3200000,
-        "picture" : "./img/aston_martin.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/05_aston_martin_am_rb_001.jpg"
     },
     {
         "name" : "Ferrari Pininfarina",
@@ -69,6 +69,6 @@
         "hp": 570,
         "max_speed": 198,
         "price" : 3000000,
-        "picture" : "./img/ferrari_pininfarina.jpg"
+        "picture" : "https://www.beautifullife.info/wp-content/uploads/2019/01/10/06_ferrari_pininfarina_sergio.jpg"
     }
 ]
