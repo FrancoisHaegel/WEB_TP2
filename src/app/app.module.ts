@@ -13,6 +13,7 @@ import { ListFilterComponent } from './list-filter/list-filter.component';
 import { ListFilterPipe } from './list-filter/list-filter.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { InputErrorDirective } from './user-form/input-error.directive';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InputErrorDirective } from './user-form/input-error.directive';
     ArticleListComponent,
     ListFilterComponent,
     ListFilterPipe,
-    InputErrorDirective
+    InputErrorDirective,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
