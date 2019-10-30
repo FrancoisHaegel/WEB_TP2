@@ -3,7 +3,10 @@ import { ArticleService } from '../service/article.service';
 import { Article } from '../models/article/article'
 import { Observable, combineLatest } from 'rxjs';
 import { FormControl, FormGroup } from '@angular/forms';
-import { startWith, map } from 'rxjs/operators';  
+import { startWith, map } from 'rxjs/operators'; 
+import { Store } from '@ngxs/store';
+import { AddArticle, DtlArticle } from '../shared/actions/article.action';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-article-list',
@@ -12,7 +15,7 @@ import { startWith, map } from 'rxjs/operators';
 })
 export class ArticleListComponent implements OnInit {
 
-  constructor(private articleService : ArticleService) { }
+  constructor(private articleService : ArticleService, private store : Store, private router : Router) { }
   articles : Article[] = [];
   inputFilter : string = "";
   type : string = "";
@@ -28,4 +31,25 @@ export class ArticleListComponent implements OnInit {
     public majFilter (filte: string) {
       this.inputFilter = filte;
     }
+
+  addToShoppingCart(article: Article)
+  {
+      this.addArticle (article);
+  }
+
+  addArticle(article: Article)
+  {
+    this.store.dispatch(new AddArticle(article));
+  }
+
+  detailArticle(article: Article)
+  {
+    this.dtlArticle (article);
+    this.router.navigate(['/detail']);  
+  }
+
+  dtlArticle(article: Article)
+  {
+    this.store.dispatch(new DtlArticle(article));
+  }
 }

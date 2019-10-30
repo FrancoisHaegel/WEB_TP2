@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { RouterModule, Routes, Router } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
+import { NgxsModule } from '@ngxs/store';
+import { from } from 'rxjs';
 
 import { AppComponent } from './app.component';
 import { TetiereComponent } from './tetiere/tetiere.component';
@@ -11,10 +15,35 @@ import { ArticleService } from './service/article.service';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ListFilterComponent } from './list-filter/list-filter.component';
 import { ListFilterPipe } from './list-filter/list-filter.pipe';
-import { HttpClientModule } from '@angular/common/http';
 import { InputErrorDirective } from './user-form/input-error.directive';
-import { NgxsModule } from '@ngxs/store';
+import { HomeComponent } from './home/home.component';
+import { DetailComponent } from './detail/detail.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ArticlesState } from './shared/states/article.state';
 
+const routes: Routes = [
+  {
+    path: '', 
+    component : HomeComponent,
+  },
+  {
+    path: 'register',
+    loadChildren : './user-form/user-form.module#UserFormModule',
+  },
+  {
+    path: 'article-list',
+    component : ArticleListComponent
+  },
+  {
+    path: 'shopping-cart',
+    component : ShoppingCartComponent
+  },
+  {
+    path: 'detail',
+    component : DetailComponent
+  }
+
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +54,18 @@ import { NgxsModule } from '@ngxs/store';
     ArticleListComponent,
     ListFilterComponent,
     ListFilterPipe,
-    InputErrorDirective
+    InputErrorDirective,
+    HomeComponent,
+    DetailComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+    NgxsModule.forRoot([ArticlesState])
   ],
   providers: [
     PhoneNumberPipe,
