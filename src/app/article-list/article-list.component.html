@@ -2,30 +2,29 @@
 <h3>Article list</h3>
 <div class="row">
     <div class="col-md-3" *ngFor="let article of articles | listFilter :inputFilter:type">
-        <div class="ibox">
-            <div class="ibox-content product-box">
-                <img class="product-picture" src="{{ article.picture }}">
-                <div class="product-desc">
-                    <a class="product-name"> {{ article.name }}</a>
-                    <div class="product-sub-desc">
-                      <div class="small m-t-xs">
-                          {{ article.engine }}
-                      </div>
-                      <div class="small m-t-xs">
-                          {{ article.hp }} hp
-                      </div>
-                      <div class="small m-t-xs">
-                          {{ article.max_speed }} Mph
-                      </div>
-                      <div class="small m-t-xs">
-                          {{ article.color }}
-                      </div>
-                      <div class="small m-t-xs">
-                          $ {{ article.price }}
-                      </div>
+        <div class="article-container">    
+              <div class="product-desc">
+                <div class="product-name"> {{ article.name }}</div>
+                  <div class="product-sub-desc">
+                    <div class="small m-t-xs">
+                        {{ article.engine }}
                     </div>
-                </div>
-            </div>
+                    <div class="small m-t-xs">
+                        {{ article.hp }} hp
+                    </div>
+                    <div class="small m-t-xs">
+                        {{ article.max_speed }} Mph
+                    </div>
+                    <div class="small m-t-xs">
+                        {{ article.color }}
+                    </div>
+                    <div class="small m-t-xs">
+                        $ {{ article.price }}
+                    </div>
+                  </div>
+              </div>
+              <img class="product-picture" src="{{ article.picture }}">
+              <button type="button" class="btn btn-default" >More Informations</button>
         </div>
     </div>
 </div>

@@ -13,9 +13,7 @@ import { ListFilterComponent } from './list-filter/list-filter.component';
 import { ListFilterPipe } from './list-filter/list-filter.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { InputErrorDirective } from './user-form/input-error.directive';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { NgxsModule } from '@ngxs/store';
-import { CartManager } from './shopping-cart/shopping-cart.state';
 
 @NgModule({
   declarations: [
@@ -27,14 +25,12 @@ import { CartManager } from './shopping-cart/shopping-cart.state';
     ArticleListComponent,
     ListFilterComponent,
     ListFilterPipe,
-    InputErrorDirective,
-    ShoppingCartComponent
+    InputErrorDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
-    NgxsModule.forRoot([CartManager])
+    HttpClientModule
   ],
   providers: [
     PhoneNumberPipe,
