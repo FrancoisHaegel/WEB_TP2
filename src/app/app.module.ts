@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: 'register',
-    loadChildren : './user-form/user-form.module#UserFormModule',
+    component : UserFormComponent
   },
   {
     path: 'article-list',

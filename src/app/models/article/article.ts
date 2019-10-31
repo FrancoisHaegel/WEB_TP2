@@ -7,4 +7,5 @@ export class Article {
     max_speed : number;
     price : number;
     picture : string;
+    description : string;
 }

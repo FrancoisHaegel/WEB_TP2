@@ -31,11 +31,26 @@
   width: 100%;
 }
 
-.btn {
+.btn-white {
   text-align: center;
   border-color: #000000;
   border-style: inline;
-  padding: 2% 10% 2% 10%;
-  display: flex;
-  margin: 0 auto 0 auto;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.btn-black {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  border-color: #000000;
+  border-style: inline;
+  width: 100%;
+  margin: auto;
+}
+
+.article-actions {
+  margin: auto;
+  width: 60%;
+  margin-top: 1em;
 }
